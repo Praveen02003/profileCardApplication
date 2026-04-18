@@ -1,0 +1,322 @@
+/* container part style */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* headerRow part style */
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* logoutButton part style */
+#logoutButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* topBar part style */
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+/* addUserButton part style */
+#addUserButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* cardContainer part style */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    width: 75rem;
+    min-height: 300px;
+}
+
+/* userCard part style */
+.userCard {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+    width: 23rem;
+}
+
+/* cardHeader part style */
+.cardHeader h3 {
+    margin: 0 0 8px 0;
+    color: #1e293b;
+}
+
+.cardHeader hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 12px 0;
+}
+
+.cardHeaderText p span:first-child {
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* cardBody part style */
+.cardBody p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.cardBody p span:first-child {
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* details part style */
+.details {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* all buttons part style */
+.actions {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.actions a,
+.actions button {
+    flex: 1;
+    flex-basis: 0;
+    min-width: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    height: 38px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.editButton {
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: 1px solid #e2e8f0;
+}
+
+.viewButton {
+    background: #007bff;
+    color: white;
+}
+
+.deleteButton {
+    background: #007bff;
+    color: white;
+}
+
+/* userModal part style */
+.mainModal,
+.userModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(4 3 3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* modalContent part style */
+
+.modalContent,
+.contentModal {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+}
+
+/* userDetails part style */
+#userDetails {
+    margin-bottom: 10px;
+}
+
+/* userDetail part style */
+.userDetail {
+    padding: 10px 0;
+}
+
+.userDetail span {
+    font-weight: bold;
+    color: #64748b;
+    width: 80px;
+    display: inline-block;
+}
+
+/* footerModal part style */
+
+.footerModal,
+.modalFooter {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* closeModalButton part style */
+
+#closeModalButton,
+#modalClose {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* okModalButton part style */
+#okModalButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .cardContainer {
+        width: 21rem;
+        justify-content: center;
+    }
+
+    .userCard {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .headerRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #logoutButton {
+        width: 100%;
+    }
+
+
+    .topBar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    #addUserButton {
+        width: 100%;
+    }
+}
+
+
+
+/* editModal style part */
+.editModal {
+    position: fixed;
+    inset: 0;
+    background: rgb(8 5 5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+#editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding-left: 12px;
+}
+
+.inputGroup label {
+    color: #666;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.inputGroup input {
+    border: none;
+}
+
+.termsRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
